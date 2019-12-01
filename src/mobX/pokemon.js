@@ -2,7 +2,7 @@ import { action, computed, decorate, observable, runInAction } from 'mobx'
 import axios from 'axios'
 
 class Pokemon {
-  limit = 150
+  limit = 100
   searchValue = ''
   data = []
   get pokemons() {

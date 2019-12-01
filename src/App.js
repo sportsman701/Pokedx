@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import DisplayPokemon from './components/DisplayPokemon'
+import { observer } from 'mobx-react'
+import Search from './components/Search'
 
-function App() {
+const App = observer(props => {
+  const {
+    getPokemons,
+    pokemons,
+    types,
+    changeTypes,
+    changeSearch,
+    loadingPokemons
+  } = props.store
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ textAlign: 'center' }}>
+      <Search
+        types={types}
+        changeTypes={changeTypes}
+        changeSearch={changeSearch}
+      />
+      <DisplayPokemon
+        pokemons={pokemons}
+        getPokemons={getPokemons}
+        loadingPokemons={loadingPokemons}
+      />
     </div>
-  );
-}
+  )
+})
 
-export default App;
+export default App

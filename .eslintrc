@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+
+  },
+  "extends": ["standard-react","standard"],
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "jsx-quotes": ["error","prefer-double"],
+    "space-before-function-paren": "off",
+    "lines-between-class-members": "off"
+  }
+}

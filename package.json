@@ -13,14 +13,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && move docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "prettier": {
     "semi": false,
-    "singleQuote": true,
-    "spa": true
+    "singleQuote": true
   },
   "eslintConfig": {
     "extends": "react-app"

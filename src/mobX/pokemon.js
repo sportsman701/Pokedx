@@ -2,6 +2,7 @@ import { action, computed, decorate, observable, runInAction } from 'mobx'
 import axios from 'axios'
 
 class Pokemon {
+  // limit restricted to 100 because of API
   limit = 100
   searchValue = ''
   data = []
@@ -56,6 +57,7 @@ class Pokemon {
     const data = await Promise.all(
       pokemons.data.results.map(async pokemon => {
         const id = pokemon.url.match(/pokemon\/(\d+)/)[1]
+        // This request is heavy , so the limit is 100
         const info = await axios
           .get(`https://pokeapi.co/api/v2/pokemon/${id}/`)
           .then(res => res.data)

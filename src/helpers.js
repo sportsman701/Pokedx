@@ -19,5 +19,5 @@ export const getColor = type => {
     dragon: 'rgb(112,56,248)',
     fairy: 'rgb(240, 182, 188)'
   }
-  return color[type] || '#C03028'
+  return color[type] || '#000000'
 }

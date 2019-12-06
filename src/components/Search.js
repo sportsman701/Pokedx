@@ -1,36 +1,47 @@
 import React from 'react'
-import { Checkbox, Input, Row, Col } from 'antd'
+import { Radio, Row, Col, Input, message } from 'antd'
 import { observer } from 'mobx-react'
 import { getColor } from '../helpers'
 
-const Search = observer(({ types, changeTypes, changeSearch }) => {
-  const onChangeCheckBox = checkedValues => changeTypes(checkedValues)
+const Search = observer(({ props }) => {
+  const { types, changeType, searchPokemon, pokemonExist } = props
+  const onChangeRadio = event => changeType(event.target.value)
+  const error = () => {
+    message.error('Pokemon is not found', 2)
+  }
+  if (pokemonExist === false) {
+    error()
+  }
   return (
     <div>
-      <Checkbox.Group
+      <Radio.Group
         style={{ width: '100%' }}
-        onChange={onChangeCheckBox}
-        defaultValue={types}
+        onChange={onChangeRadio}
+        defaultValue="any"
+        buttonStyle="solid"
       >
         <div>Tags</div>
         <Row style={{ paddingLeft: '15%', paddingRight: '5%' }}>
           {types.map(type => {
             return (
-              <Col span={8} key={type} style={{ textAlign: 'left' }}>
-                <Checkbox style={{ color: getColor(type) }} value={type}>
+              <Col span={5} key={type} style={{ textAlign: 'left' }}>
+                <Radio.Button
+                  style={{ color: getColor(type), width: 75 }}
+                  value={type}
+                >
                   {type}
-                </Checkbox>
+                </Radio.Button>
               </Col>
             )
           })}
         </Row>
-      </Checkbox.Group>
+      </Radio.Group>
       <Input.Search
-        style={{ width: '90%', marginTop: '2%' }}
-        placeholder="Name of pokemon"
-        onKeyUp={e => {
-          changeSearch(e.target.value)
-        }}
+        style={{ width: '97%' }}
+        placeholder="Full name of pokemon (e.g. bulbasaur,pikachu)"
+        enterButton="Search"
+        size="large"
+        onSearch={value => searchPokemon(value)}
       />
     </div>
   )

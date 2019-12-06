@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e47da2af574e2533821e26eab3cd6a0d",
+    "revision": "bc05b5deb321feee61314eef11524e09",
     "url": "/Pokedx/index.html"
   },
   {
-    "revision": "557913763e87044bb556",
+    "revision": "bf842adaa9e3087ae854",
     "url": "/Pokedx/static/css/2.90172c5a.chunk.css"
   },
   {
-    "revision": "8927118c16251776e103",
+    "revision": "75196c705a5e314158b8",
     "url": "/Pokedx/static/css/main.1f612b0e.chunk.css"
   },
   {
-    "revision": "557913763e87044bb556",
-    "url": "/Pokedx/static/js/2.0d4af34a.chunk.js"
+    "revision": "bf842adaa9e3087ae854",
+    "url": "/Pokedx/static/js/2.17477111.chunk.js"
   },
   {
-    "revision": "8927118c16251776e103",
-    "url": "/Pokedx/static/js/main.a8aff60a.chunk.js"
+    "revision": "75196c705a5e314158b8",
+    "url": "/Pokedx/static/js/main.9c01ca5b.chunk.js"
   },
   {
     "revision": "5f5a9937b0f1c8f18b24",

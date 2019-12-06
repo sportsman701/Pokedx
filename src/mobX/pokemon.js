@@ -71,6 +71,9 @@ class Pokemon {
             return [baseStat, name]
           })
         }
+        if (this.modalData.type.length === 1) {
+          this.modalData.type[1] = ['none', 'Additional type']
+        }
         this.pokemonExist = true
         this.showModal = true
       })

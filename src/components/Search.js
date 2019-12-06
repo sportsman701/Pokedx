@@ -37,7 +37,7 @@ const Search = observer(({ props }) => {
         </Row>
       </Radio.Group>
       <Input.Search
-        style={{ width: '97%' }}
+        style={{ width: '97%', paddingTop: '2%' }}
         placeholder="Full name of pokemon (e.g. bulbasaur,pikachu)"
         enterButton="Search"
         size="large"

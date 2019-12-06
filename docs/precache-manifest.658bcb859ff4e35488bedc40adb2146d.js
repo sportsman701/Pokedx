@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0acdfe70c5f78272539a8c9f0a72a5ad",
+    "revision": "cc69ee1e8daeda1546254f5bca31f55e",
     "url": "/Pokedx/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Pokedx/static/css/2.90172c5a.chunk.css"
   },
   {
-    "revision": "93f4a4f834a4ef380cbd",
+    "revision": "d624349c44a59edf4950",
     "url": "/Pokedx/static/css/main.1f612b0e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Pokedx/static/js/2.17477111.chunk.js"
   },
   {
-    "revision": "93f4a4f834a4ef380cbd",
-    "url": "/Pokedx/static/js/main.5c86af35.chunk.js"
+    "revision": "d624349c44a59edf4950",
+    "url": "/Pokedx/static/js/main.f5e65933.chunk.js"
   },
   {
     "revision": "5f5a9937b0f1c8f18b24",

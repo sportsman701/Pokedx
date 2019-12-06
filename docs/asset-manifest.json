@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Pokedx/static/css/main.1f612b0e.chunk.css",
-    "main.js": "/Pokedx/static/js/main.5c86af35.chunk.js",
-    "main.js.map": "/Pokedx/static/js/main.5c86af35.chunk.js.map",
+    "main.js": "/Pokedx/static/js/main.f5e65933.chunk.js",
+    "main.js.map": "/Pokedx/static/js/main.f5e65933.chunk.js.map",
     "runtime-main.js": "/Pokedx/static/js/runtime-main.89a59c3f.js",
     "runtime-main.js.map": "/Pokedx/static/js/runtime-main.89a59c3f.js.map",
     "static/css/2.90172c5a.chunk.css": "/Pokedx/static/css/2.90172c5a.chunk.css",
     "static/js/2.17477111.chunk.js": "/Pokedx/static/js/2.17477111.chunk.js",
     "static/js/2.17477111.chunk.js.map": "/Pokedx/static/js/2.17477111.chunk.js.map",
     "index.html": "/Pokedx/index.html",
-    "precache-manifest.f266dcfbadda844d5bb0fd0a5794a664.js": "/Pokedx/precache-manifest.f266dcfbadda844d5bb0fd0a5794a664.js",
+    "precache-manifest.658bcb859ff4e35488bedc40adb2146d.js": "/Pokedx/precache-manifest.658bcb859ff4e35488bedc40adb2146d.js",
     "service-worker.js": "/Pokedx/service-worker.js",
     "static/css/2.90172c5a.chunk.css.map": "/Pokedx/static/css/2.90172c5a.chunk.css.map",
     "static/css/main.1f612b0e.chunk.css.map": "/Pokedx/static/css/main.1f612b0e.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.90172c5a.chunk.css",
     "static/js/2.17477111.chunk.js",
     "static/css/main.1f612b0e.chunk.css",
-    "static/js/main.5c86af35.chunk.js"
+    "static/js/main.f5e65933.chunk.js"
   ]
 }

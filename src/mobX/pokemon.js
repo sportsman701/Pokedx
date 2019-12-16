@@ -79,6 +79,7 @@ class Pokemon {
       })
     } catch (e) {
       this.pokemonExist = false
+      this.pokemonExist = true
     }
   }
   handleModalOk = () => {
